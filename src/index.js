@@ -1,9 +1,8 @@
+import './theme';
 import dishes from './menu.json';
 import recipeTemplates from './recipe.hbs';
-import './styles.css';
-import './theme';
 import './storage';
-import './lazyLoad'
+import './styles.css';
 
 const recipeList = document.querySelector('.js-menu');
 

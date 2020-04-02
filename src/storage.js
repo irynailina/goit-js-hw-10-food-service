@@ -1,6 +1,3 @@
-// storage.js
-
-// Принимает ключ `key` по которому будет произведена выборка.
 const load = key => {
   try {
     const serializedState = localStorage.getItem(key);
@@ -11,7 +8,6 @@ const load = key => {
   }
 };
 
-// Принимает ключ `key` и значение `value`.
 const save = (key, value) => {
   try {
     const serializedState = JSON.stringify(value);
