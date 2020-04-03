@@ -1,4 +1,4 @@
-const load = key => {
+export const load = key => {
   try {
     const serializedState = localStorage.getItem(key);
 
@@ -8,7 +8,7 @@ const load = key => {
   }
 };
 
-const save = (key, value) => {
+export const save = (key, value) => {
   try {
     const serializedState = JSON.stringify(value);
     localStorage.setItem(key, serializedState);
@@ -17,4 +17,4 @@ const save = (key, value) => {
   }
 };
 
-export default { load, save };
+// export default { load, save };
